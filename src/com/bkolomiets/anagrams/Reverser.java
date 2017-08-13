@@ -5,14 +5,12 @@ import static java.lang.Character.isLetter;
 public class Reverser {
 
     public String reverseLine(String line) {
-        StringBuilder result = new StringBuilder();
-        String[] separatedLine = line.split(" ");
-
-        for (String word : separatedLine) {
-            result.append(reverseWord(word)).append(" ");
+        String result = "";
+        while (line.contains(" ")) {
+            result = result + reverseWord(line.substring(0, line.indexOf(" "))) + " ";
+            line = line.substring(line.indexOf(" ") + 1);
         }
-
-        return result.toString().trim();
+        return result + reverseWord(line);
     }
 
     public String reverseWord(String word) {
