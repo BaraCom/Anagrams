@@ -18,6 +18,10 @@ public class Main {
     }
 
     private void methodOne() {
+        System.out.println("bla bla");
+    }
+
+    private void methodOne() {
         System.out.println("Test");
     }
 }
