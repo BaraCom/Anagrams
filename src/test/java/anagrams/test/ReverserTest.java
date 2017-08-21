@@ -6,15 +6,21 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ReverserTest {
+    private final Reverser reverser = new Reverser();
 
     @Test
     public void reverseLineTest() {
+        String expected = "cba123 jk o8";
+        String actual = reverser.reverseLine("abc123 kj o8");
 
-        Reverser reverser = new Reverser();
+        assertEquals(expected, actual);
+    }
 
+    @Test
+    public void reverseWordTest() {
         String expectedResult = "cba123";
-        String actualMethod = reverser.reverseLine("abc123");
+        String actualResult = reverser.reverseWord("abc123");
 
-        assertEquals("The test is failed!", expectedResult, actualMethod);
+        assertEquals(expectedResult, actualResult);
     }
 }
