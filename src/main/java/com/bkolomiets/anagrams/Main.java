@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
         Reverser reverser = new Reverser();
 
         System.out.print("Enter something: ");
@@ -16,5 +15,9 @@ public class Main {
         System.out.printf("Your result:     %s", reverser.reverseLine(inputLine));
 
         scanner.close();
+    }
+
+    private void methodOne() {
+        System.out.println("Test");
     }
 }
