@@ -17,4 +17,8 @@ public class Main {
 
         scanner.close();
     }
+
+    private void methodOne() {
+        System.out.println("bla bla");
+    }
 }
