@@ -33,7 +33,6 @@ public class Reverser {
                 }
             }
         }
-
         return new String(resultChars);
     }
 }
